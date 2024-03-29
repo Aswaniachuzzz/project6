@@ -1,0 +1,85 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %}home page{% endblock%}
+
+{% block content %}
+
+<h2 class="pro1">cart</h2><br><br><br><br>
+<div class="container" >
+    
+
+    <div class="row">
+         <div class="col-sm-9">
+
+         {% for x in cart %} 
+         <div class="row my-2" style="background-color: rgba(192, 192, 238, 0.76);">
+         <div class="col-sm-4 ps-0">
+            <div class="inbox1">
+                <img src="/media/{{x.cart_image}}" alt="" width="100%" height="200px">
+        </div>
+    </div> 
+    <div class="col-sm-4">
+
+        <div class="span1">
+            <span>{{x.cart_name}}</span>
+        </div>
+        <div class="span1">
+            <span>price = {{x.cart_price}}</span>
+        </div>
+        <div class="span1">
+            <span>
+                <a href="/cart?q=dec&cp={{x.id}}"class="btn btn-danger btn-sm">-</a>
+                {{x.cart_qty}}
+                <a href="/cart?q=inc&cp={{x.id}}"class="btn btn-success btn-sm">+</a>
+            </span>
+        </div>
+
+    </div> 
+    <div class="col-sm-4">
+
+        <div class="span1">
+            <span>{{x.cart_amount}}</span>
+            <br>
+            <br>
+            <a href="/cart?del={{x.id}}">
+                <button class="btn btn-danger btn-sm">
+                    <i class="bi bi-trash3-fill"></i>
+                </button>
+            </a>
+        </div>
+    </div> 
+
+
+    </div>
+    {% endfor %}
+    </div>   
+
+    <div class="col-sm-3">
+        <div style="background-color: aliceblue;min-height: 300px;">
+             Total amount : {{tot}}
+             <br><br>
+             shipping : {{shp}}
+             <br><br>
+             GST : {{gst}}
+             <br>
+             <hr>
+             <br>
+             Total : {{gtot}}
+             <br><br>
+             <a href="/checkout">
+             <button class="btn btn-success">checkout</button>
+            </a>
+        </div>
+    </div>
+        
+        
+        
+        </div>  
+        
+            
+    
+        
+    </div>
+         
+{% endblock %}

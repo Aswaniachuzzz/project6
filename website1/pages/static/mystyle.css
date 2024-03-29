@@ -1,0 +1,145 @@
+
+:root{
+    --blue--:blueviolet;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sec1{
+    background-color: var(--blue--);
+}
+.banner-container{
+    color: white;
+    margin-top: 110px;
+}
+.banner-container h1{
+   font-size: 50px;
+   font-weight: 800;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.banner-container h2{
+    font-size: 45px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sec2 .inbox{
+    background: rgb(231, 230, 230);
+    transition: all 0.5s;
+}
+.sec2 .inbox:hover{
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.sec2{
+  background-color:rgb(255, 255, 255);
+  text-align: center;
+  font-family:'Gill Sans MT' ;
+  padding: 20px;
+}
+.cl{
+    margin-bottom: 15px;
+}
+.sec3{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family:'Gill Sans MT' ;
+}
+.sec3 .inbox{
+    background-color: rgb(231, 230, 230);
+    transition: all 0.5s;
+}
+.sec3 .inbox:hover{
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+.sec3 .inbox img{
+    height: 170px;
+}
+.sec4{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-family:'Gill Sans MT' ;
+    padding: 20px;
+}
+.sec4 .inbox{
+    background-color: rgb(231, 230, 230);
+    transition: all 0.5s;
+}
+.sec4 .inbox img{
+    height: 170px;
+}
+.sec4 .inbox:hover{
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+.sec5{
+    background-color: var(--blue--);
+    min-height: 500px;
+    color: white;
+}
+.sec5 .contact-inobox{
+   margin-top: 20px;
+}
+.sec6{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.sec7{
+    margin-top: 5px;
+    font-size: large;
+    
+}
+.sec8{
+    display: inline-block;
+    margin-top: 20px;
+
+} 
+.bi-cart-fill{
+    color:white;
+    font-size: 25px;
+}   
+.maps iframe{
+   border-radius: 20px;
+   margin-top: 50px;
+}
+
+.inbox1{
+    background-color: rgb(231, 230, 230);
+    transition: all 0.5s;
+    padding: 10px;
+}
+.inbox1 img{
+    height: 170px;
+}
+.inbox1:hover{
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+.inbox1 .span1{
+    text-align: center;
+}
+.button-product{
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+}
+.pro1{
+    text-align: center;
+}
+.sec10{
+    color: green;
+}
+.sec11{
+    color:black;
+    font-size: 20px;
+}
+.sec9{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
